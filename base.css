@@ -1,12 +1,12 @@
 /* --- Police "system" & fond du bureau --- */
 body {
   font-family: BBB Baskervvol, serif;
-  background-image: url('fonte.png'); /* fond de page accueil */
+  background-image: url('images/fonte.png'); /* fond de page accueil */
   background-size: cover;           /* L’image remplit tout l’écran */
   background-repeat: no-repeat;     /* Pas de répétition */
   background-position: center;      /* Centré */
   background-attachment: fixed;
-
+  position: relative;
   color: #000;
 }
 
@@ -22,6 +22,37 @@ body {
   margin-bottom: 30px;
 }
 
+/* Clickable objects */
+.butt-on {
+  width: auto;
+  height: auto;
+  position: fixed;
+
+}
+.homebutt {
+  position: fixed;
+  bottom: 200px;
+  left: 70px;
+}
+
+.flag {
+  margin:10px auto;
+  position: sticky;
+  top: 300px;
+  left: 40px;
+}
+
+.clope {
+  border: 2px solid #996dcfff; /* contour violet */
+  background: #ffffff;          /* fond jaune */
+  box-shadow: 4px 4px 0 #2224;
+  border-radius: 0;
+  margin: 40px auto;
+  position: fixed;
+  top: 500px;
+  right: 1200px;
+  margin-bottom: 30px;
+}
 
 /* --- Fenetre de navigation a droite --- */
 .rightnav {
@@ -35,18 +66,7 @@ body {
   right: 0;
   height: 100vh;
   overflow-y: auto;
-  opacity: 0.7;
-}
-
-.xp-window-gallery {
-  width: 1000px;
-  border: 2px solid #3966b2;
-  background: #e9e7e3;
-  box-shadow: 4px 4px 0 #2224;
-  border-radius: 0;
-  margin: 40px auto;
-  position: relative;
-  margin-bottom: 30px;
+  opacity: 0.8;
 }
 
 
